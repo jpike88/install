@@ -318,7 +318,7 @@ vfsextend(){
 collab(){
   echo :Installing Collab Dependencies
   $NPM cache clean
-  $NPM install sqlite3
+  $NPM install sqlite3 --build-from-source
   $NPM install sequelize@2.0.0-beta.0
   mkdir -p "$C9_DIR"/lib
   cd "$C9_DIR"/lib
